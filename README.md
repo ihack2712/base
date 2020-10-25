@@ -17,7 +17,7 @@ binary.encode(123);
 
 // Decode some data.
 binary.decode("1111011");
-// => 123
+// => 123n
 ```
 
 Base comes prebundled with these bases:
