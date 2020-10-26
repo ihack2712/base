@@ -27,5 +27,3 @@ export function decode (str: string, alphabet: string): bigint
 	}
 	return n;
 }
-
-console.log(decode("0", "01"));

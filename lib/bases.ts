@@ -1,5 +1,5 @@
 // Imports
-import { Base } from "./base.ts";
+import { Base } from "./Base.ts";
 import {
 	_base2,
 	_base8,
