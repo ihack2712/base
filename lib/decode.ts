@@ -18,9 +18,9 @@ export function decode (str: string, alphabet: string): bigint
 	const alen: bigint = big(alphabet.length);
 	const slen: bigint = big(str.length);
 	let n: bigint = zero;
-	for (let i: number = 0; i < alphabet.length; i++)
+	for (let i: number = 0; i < str.length; i++)
 	{
-		const char = str.charAt(Number(i));
+		const char = str.charAt(i);
 		let exp = slen - big(i) - one;
 		if (exp < zero) exp = zero;
 		n += big(alphabet.indexOf(char)) * (alen ** exp);
