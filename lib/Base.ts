@@ -32,6 +32,7 @@ export class Base
 	 * @param baseOrAlphabet The base or alphabet to encode the big
 	 *  integer into.
 	 */
+	public static encode (num: Big, baseOrAlphabet: Base | string): string;
 	public static encode (num: Big, baseOrAlphabet: Base | string): string
 	{
 		return encode(
@@ -47,14 +48,14 @@ export class Base
 	 * @param str The string.
 	 * @param base The base to decode from.
 	 */
-	public static decode (num: Big, base: Base): bigint;
+	public static decode (str: string, base: Base): bigint;
 	
 	/**
 	 * Decode some string into a big integer using an alphabet.
 	 * @param str The string.
 	 * @param alphabet The alphabet to decode from.
 	 */
-	public static decode (num: Big, alphabet: string): bigint;
+	public static decode (str: string, alphabet: string): bigint;
 	
 	/**
 	 * Decode some string into a big integer using a base or
@@ -62,6 +63,7 @@ export class Base
 	 * @param str The string.
 	 * @param baseOrAlphabet The base to decode from.
 	 */
+	public static decode (str: string, baseOrAlphabet: Base | string): bigint;
 	public static decode (str: string, baseOrAlphabet: Base | string): bigint
 	{
 		return decode(
